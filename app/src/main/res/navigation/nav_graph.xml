@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoryListFragment">
+
+    <fragment
+        android:id="@+id/fragment_list_category"
+        android:name="com.learning.hackathon3_groupe.fragment_list_category"
+        android:label="fragment_list_category"
+        tools:layout="@layout/fragment_list_category" >
+        <action
+            android:id="@+id/action_fragment_list_category_to_categoryListFragment"
+            app:destination="@id/categoryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.learning.hackathon3_groupe.categorylist.CategoryListFragment"
+        android:label="fragment_list_category"
+        tools:layout="@layout/fragment_list_category" />
+</navigation>
